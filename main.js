@@ -21,7 +21,7 @@ for (const image of config.images) {
             const userAgent = UAParser(req.headers["user-agent"]);
             const title = `New connection for image "${image.name}"`;
             const message = `At ${new Date(Date.now()).toLocaleString()}\n
-                             IP: ${req.socket.remoteAddress} | PORT: ${req.socket.remotePort}\n
+                             IP: ${req.ip} | PORT: ${req.socket.remotePort}\n
                              Browser: ${userAgent.browser.name} version ${userAgent.browser.version}\n
                              OS: ${userAgent.os.name} version ${userAgent.os.version}\n
                              CPU architecture: ${userAgent.cpu.architecture}\n
