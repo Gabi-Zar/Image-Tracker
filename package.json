@@ -1,0 +1,19 @@
+{
+    "name": "image-tracker",
+    "version": "1.0.0",
+    "description": "",
+    "license": "GPL-3.0",
+    "author": "GabiZar",
+    "type": "module",
+    "main": "main.js",
+    "scripts": {
+        "start": "node main.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+        "dotenv": "^17.4.2",
+        "express": "^5.2.1",
+        "ntfy": "^1.15.3",
+        "ua-parser-js": "^2.0.10"
+    }
+}
